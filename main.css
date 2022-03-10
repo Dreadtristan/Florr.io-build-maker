@@ -1,0 +1,21 @@
+html{
+    background-color: rgb(26, 26, 26);
+    color:rgb(0, 217, 255);
+}
+table, th, td {
+    border: 1px solid rgb(64, 64, 66);
+    border-collapse: collapse;
+  }
+.headerLink{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(8, 100, 100);
+    color:rgb(13, 23, 107);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    left:50%;
+}

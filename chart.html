@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <link rel="stylesheet" href="main.css">
+    <head>
+<title>Florr.io Petal Chart</title>
+
+</head>
+<table style="text-align: left; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;width: 50%;">
+
+    <tbody><tr>
+    <th style="width: 5%">Petal
+    </th>
+    <th style="width: 7%;">Cooldown
+    </th>
+    <th style="width: 5%;">Damage
+    </th>
+    <th style="width: 6%;">Health
+    </th>
+    <th style="width: 3%;">Delete EXP
+    </th>
+    <th style="width: 8%;">Extra</th></tr>
+    <tr >
+    <td>Basic
+    </td>
+    <td>2.5
+    </td>
+    <td>10
+    </td>
+    <td>10
+    </td>
+    <td><b>0</b>
+    </td>
+    <td>Its a basic
+    </td></tr>
+    <tr >
+    <td>Fast
+    </td>
+    <td>0.5
+    </td>
+    <td>8
+    </td>
+    <td>5
+    </td>
+    <td>2
+    </td>
+    <td>Its faster 
+    </td></tr>
+    <tr >
+    <td>Heavy
+    </td>
+    <td>5.5
+    </td>
+    <td>20
+    </td>
+    <td>20
+    </td>
+    <td>2
+    </td>
+    <td>Its heavy
+    </td></tr>
+    <tr >
+    <td>Iris
+    </td>
+    <td>6
+    </td>
+    <td>5 normal + 60 poison (it, and all other poison deals 9 DPS)
+    </td>
+    <td>5
+    </td>
+    <td>10
+    </td>
+    <td>Poisons player and mobs.
+    </td></tr>
+    <tr >
+    <td>Leaf
+    </td>
+    <td>1
+    </td>
+    <td>8
+    </td>
+    <td>10
+    </td>
+    <td>10
+    </td>
+    <td>Heals player passively
+    </td></tr>
+    <tr >
+    <td>Rose (Unusual)
+    </td>
+    <td>3.5 (+ delay before it can heal + delay before it actually heals)
+    </td>
+    <td>5
+    </td>
+    <td>5
+    </td>
+    <td>10
+    </td>
+    <td>Heals player for 10 HP.
+    </td></tr>
+    <tr >
+    <td>Stinger (Unusual)
+    </td>
+    <td>4
+    </td>
+    <td>35
+    </td>
+    <td>8
+    </td>
+    <td>10
+    </td>
+    <td>Is one-shotted by anything beside roses, corn, bubble, dandelion, eggs, and cacti.
+    </td></tr>
+    <tr >
+    <td>Twin
+    </td>
+    <td>1
+    </td>
+    <td>8 each
+    </td>
+    <td>5 each
+    </td>
+    <td>10
+    </td>
+    <td>Its two fast
+    </td></tr>
+    <tr >
+    <td>Cactus (Rare)
+    </td>
+    <td>1
+    </td>
+    <td>5
+    </td>
+    <td>15
+    </td>
+    <td>10
+    </td>
+    <td>Increases 20 max health.
+    </td></tr>
+    <tr >
+    <td>Bubble
+    </td>
+    <td>3.5
+    </td>
+    <td>n/a
+    </td>
+    <td>1
+    </td>
+    <td>50
+    </td>
+    <td>Right click to propel your flower in the opposite direction.
+    </td></tr>
+    <tr >
+    <td>Dandelion
+    </td>
+    <td>2
+    </td>
+    <td>5
+    </td>
+    <td>10
+    </td>
+    <td>50
+    </td>
+    <td>Left click to shoot. Prevent players from healing.
+    </td></tr>
+    <tr >
+    <td>Faster
+    </td>
+    <td>0.5
+    </td>
+    <td>8
+    </td>
+    <td>5
+    </td>
+    <td>50
+    </td>
+    <td>Speeds up all your petals by 33%. Stacks.
+    </td></tr>
+    <tr >
+    <td>Honey
+    </td>
+    <td>1.7
+    </td>
+    <td>10
+    </td>
+    <td>10
+    </td>
+    <td>50
+    </td>
+    <td>Slows down other players and their petals.
+    </td></tr>
+    <tr >
+    <td>Missile
+    </td>
+    <td>3
+    </td>
+    <td>35
+    </td>
+    <td>10
+    </td>
+    <td>50
+    </td>
+    <td>Left click to shoot.
+    </td></tr>
+    <tr >
+    <td>Peas
+    </td>
+    <td>1.4
+    </td>
+    <td>8 each
+    </td>
+    <td>before splitting:20
+    <p>after splitting:5
+    </p>
+    </td>
+    <td>50
+    </td>
+    <td>Left click to shoot in 4 directions.
+    </td></tr>
+    <tr >
+    <td>Rock
+    </td>
+    <td>10
+    </td>
+    <td>10
+    </td>
+    <td>80
+    </td>
+    <td>50
+    </td>
+    <td>Da rock
+    </td></tr>
+    <tr >
+    <td>Rose (Rare)
+    </td>
+    <td>3.5 (+ delay before it can heal + delay before it actually heals)
+    </td>
+    <td>5 each
+    </td>
+    <td>5 each
+    </td>
+    <td>50
+    </td>
+    <td>Heals player for 10.5 HP (3.5 each).
+    </td></tr>
+    <tr >
+    <td>Salt
+    </td>
+    <td>2.5
+    </td>
+    <td>10
+    </td>
+    <td>10
+    </td>
+    <td>50
+    </td>
+    <td>When a player damages you, they receive some of the damage back. This does not stack with other salts.
+    </td></tr>
+    <tr >
+    <td>Web (Rare)
+    </td>
+    <td>3
+    </td>
+    <td>5
+    </td>
+    <td>8
+    </td>
+    <td>50
+    </td>
+    <td>Left click to shoot. Turns into a web after being shot, slowing down players. Stacks.
+    </td></tr>
+    <tr >
+    <td>Wing
+    </td>
+    <td>1.25
+    </td>
+    <td>15
+    </td>
+    <td>15
+    </td>
+    <td>50
+    </td>
+    <td>Goes away from the flower and back in.
+    </td></tr>
+    <tr >
+    <td>Cactus (Epic)
+    </td>
+    <td>1
+    </td>
+    <td>5 + 6 petal poison + 40 body ram poison
+    </td>
+    <td>15
+    </td>
+    <td>200
+    </td>
+    <td>Increases max health. Poisons players and makes players get poisoned upon contact with flower.
+    </td></tr>
+    <tr >
+    <td>Corn
+    </td>
+    <td>35
+    </td>
+    <td>2
+    </td>
+    <td>2000
+    </td>
+    <td>200
+    </td>
+    <td>hard
+    </td></tr>
+    <tr >
+    <td>Egg (Epic)
+    </td>
+    <td>1
+    <p>1 (pet Soldier Ant)
+    </p>
+    </td>
+    <td>1
+    <p>10 (pet Soldier Ant)
+    </p>
+    </td>
+    <td>50
+    <p>40 (pet Soldier Ant)
+    </p>
+    </td>
+    <td>200
+    </td>
+    <td>Spawns a 'pet' soldier ant. The ant will attack mobs as well as players.
+    </td></tr>
+    <tr >
+    <td>Heaviest
+    </td>
+    <td>20
+    </td>
+    <td>10
+    </td>
+    <td>200
+    </td>
+    <td>200
+    </td>
+    <td>Its hard
+    </td></tr>
+    <tr >
+    <td>Peas (Epic)
+    </td>
+    <td>1.4
+    </td>
+    <td>8 normal + 10 poison each (poison duration 2 seconds)
+    </td>
+    <td>5 (20 before being launched)
+    </td>
+    <td>200
+    </td>
+    <td>Shoots in 4 directions. Poisons players upon contact.
+    </td></tr>
+    <tr >
+    <td>Pollen
+    </td>
+    <td>1
+    </td>
+    <td>8 each
+    </td>
+    <td>5 each
+    </td>
+    <td>200
+    </td>
+    <td>Drops upon clicking. Left click scatters them, right click huddles them.
+    </td></tr>
+    <tr >
+    <td>Rice
+    </td>
+    <td>0
+    </td>
+    <td>8
+    </td>
+    <td>5
+    </td>
+    <td>200
+    </td>
+    <td>When destroyed, does not have a reload animation but instantly reappears.
+    </td></tr>
+    <tr >
+    <td>Rose (Epic)
+    </td>
+    <td>3.5 (+ delay before it can heal + delay before it actually heals)
+    </td>
+    <td>5
+    </td>
+    <td>5
+    </td>
+    <td>200
+    </td>
+    <td>Heals player for 22 HP.
+    </td></tr>
+    <tr >
+    <td>Triplet
+    </td>
+    <td>1
+    </td>
+    <td>8 each
+    </td>
+    <td>5 each
+    </td>
+    <td>200
+    </td>
+    <td>Three fasts
+    </td></tr>
+    <tr >
+    <td>Yin Yang
+    </td>
+    <td>1
+    </td>
+    <td>15
+    </td>
+    <td>15
+    </td>
+    <td>200
+    </td>
+    <td>Makes your petals spin the other way.
+    </td></tr>
+    <tr >
+    <td>Antennae
+    </td>
+    <td>n/a
+    </td>
+    <td>n/a
+    </td>
+    <td>n/a
+    </td>
+    <td>1000
+    </td>
+    <td>Increases FoV.
+    </td></tr>
+    <tr >
+    <td>Cactus (Legendary)
+    </td>
+    <td>1 (per Cactus)
+    </td>
+    <td>5 (per Cactus)
+    </td>
+    <td>15 (per Cactus)
+    </td>
+    <td>1000
+    </td>
+    <td>Increases 60 max health.
+    </td></tr>
+    <tr >
+    <td>Stinger (Legendary)
+    </td>
+    <td>4 (per Stinger)
+    </td>
+    <td>35 (per Stinger)
+    </td>
+    <td>8 (per Stinger)
+    </td>
+    <td>1000
+    </td>
+    <td>Thats a lot of damage
+    </td></tr>
+    <tr >
+    <td>Egg (Legendary)
+    </td>
+    <td>1
+    <p>2 (pet Beetle)
+    </p>
+    </td>
+    <td>1
+    <p>35 (pet Beetle)
+    </p>
+    </td>
+    <td>50
+    <p>40 (pet Beetle)
+    </p>
+    </td>
+    <td>1000
+    </td>
+    <td>Spawns a "pet" beetle. The beetle will attack mobs as well as players.
+    </td></tr>
+    <tr >
+    <td>Web (Legendary)
+    </td>
+    <td>3
+    </td>
+    <td>8 each
+    </td>
+    <td>5 each
+    </td>
+    <td>1000
+    </td>
+    <td>Left click to shoot. Turns into 3 webs after being shot, slowing down players. Stacks.
+    </td></tr>
+    <tr >
+    <td>Square
+    </td>
+    <td>2.5
+    </td>
+    <td>10
+    </td>
+    <td>10
+    </td>
+    <td>2500
+    </td>
+    <td>Rare
+    </td></tr>
+    <tr >
+    <td>Basic (Unique)
+    </td>
+    <td>2.5
+    </td>
+    <td>10
+    </td>
+    <td>10
+    </td>
+    <td>2500
+    </td>
+    <td>Goes away from the flower and back in. Has a special trail effect.
+    </td>
+    </tr>
+    </tbody>
+    </table>
+</body>
+</html>
