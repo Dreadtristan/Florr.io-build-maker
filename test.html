@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+html{
+    background-color: rgb(49, 49, 49);
+}
+img{
+    border: 2px, rgb(9, 9, 66);
+}
+.pSlot1{
+    position: absolute;
+    top: 150px;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border: 5px, darkblue;
+}
+.pSlot2{
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border: 5px, darkblue;
+}
+.pSlot3{
+    position: absolute;
+    top: 300px;
+    left:150px;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border: 5px, darkblue;
+}
+.pSlot4{
+    position: absolute;
+    top: 250px;
+    left: 250px;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border: 5px, darkblue;
+}
+.pSlot5{
+    position: absolute;
+    top: 150px;
+    left: 300px;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border: 5px, darkblue;
+}
+
+.pSlot6{
+    position: absolute;
+    top: 50px;
+    left: 250px;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border: 5px, darkblue;
+}
+.pSlot7{
+    position: absolute;
+    top: 0px;
+    left: 150px;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border: 5px, darkblue;
+}
+.pSlot8{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border: 5px, darkblue;
+}
+.petalSlots{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+.petalContaner{
+    background-color: rgb(69, 69, 69);/*nice*/
+    width: 390px;
+    height: 390px;
+    position: absolute;
+    right: 10px;
+    top:10px;
+    border-radius: 10px;
+}
+.petals{
+    position: absolute;
+    left: 10px;
+    width: 50%;
+    height: 639px;
+    background-color: rgb(167, 167, 167);
+    border-radius: 10px;
+}
+.Petals{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 640px;
+    height: 599px;
+}
+
+</style>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("Text", ev.target.id);
+}
+
+function drop(ev) {
+  var data = ev.dataTransfer.getData("Text");
+  ev.target.appendChild(document.getElementById(data));
+  ev.preventDefault();
+}
+</script>
+</head>
+<body>
+<div class="petalContaner">
+    <div class="petalSlots">
+        <div id="div1" class="pSlot1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div1" class="pSlot2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div1" class="pSlot3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div1" class="pSlot4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div1" class="pSlot5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div1" class="pSlot6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div1" class="pSlot7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div1" class="pSlot8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+</div>
+<div class="petals">
+    <div class="Petals"id="div1" class="pSlot9" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img width="50px" height="50px" id="drag1"src="Petals/Basic.png" ondragstart="drag(event)"alt="s">
+        <img width="50px" height="50px" id="drag2"src="Petals/Fast.png" ondragstart="drag(event)"alt="s">
+        <img width="50px" height="50px" id="drag3"src="Petals/Heavy.png" ondragstart="drag(event)"alt="s">
+        <img width="50px" height="50px" id="drag4"src="Petals/Twin.png" ondragstart="drag(event)"alt="s">
+        <img width="50px" height="50px" id="drag5"src="Petals/Iris.png" ondragstart="drag(event)"alt="s">
+        <img width="50px" height="50px" id="drag6"src="Petals/Stinger.png" ondragstart="drag(event)"alt="s">
+        <img width="50px" height="50px" id="drag7"src="Petals/Leaf.png" ondragstart="drag(event)"alt="s">
+        <img width="50px" height="50px" id="drag8"src="Petals/Rose.png" ondragstart="drag(event)"alt="s">
+        <img width="50px" height="50px" id="drag1"src="Petals/faster.png" ondragstart="drag(event)"alt="s">
+        <img width="50px" height="50px" id="drag2"src="Petals/Bubble.png" ondragstart="drag(event)"alt="s">
+        <img width="50px" height="50px" id="drag3"src="Petals/Cactus.png" ondragstart="drag(event)"alt="s">
+        <img width="50px" height="50px" id="drag4"src="Petals/Dandelion.png" ondragstart="drag(event)"alt="s">
+        <img width="50px" height="50px" id="drag5"src="Petals/Honey.png" ondragstart="drag(event)"alt="s">
+        <img width="50px" height="50px" id="drag6"src="Petals/Missile.png" ondragstart="drag(event)"alt="s">
+        <img width="50px" height="50px" id="drag7"src="Petals/Peas.png" ondragstart="drag(event)"alt="s">
+        <img width="50px" height="50px" id="drag8"src="Petals/Rock.png" ondragstart="drag(event)"alt="s">
+        <img width="50px" height="50px" id="drag1"src="Petals/Rose_Rare.png" ondragstart="drag(event)"alt="s">
+        <img width="50px" height="50px" id="drag2"src="Petals/Salt.png" ondragstart="drag(event)"alt="s">
+        <img width="50px" height="50px" id="drag3"src="Petals/Web.png" ondragstart="drag(event)"alt="s">
+        <img width="50px" height="50px" id="drag4"src="Petals/Wing.png" ondragstart="drag(event)"alt="s">
+        <img width="50px" height="50px" id="drag5"src="Petals/Cactus_Epic.png" ondragstart="drag(event)"alt="s">
+        <img width="50px" height="50px" id="drag6"src="Petals/Corn.png" ondragstart="drag(event)"alt="s">
+        <img width="50px" height="50px" id="drag7"src="Petals/Egg.png" ondragstart="drag(event)"alt="s">
+        <img width="50px" height="50px" id="drag8"src="Petals/Heaviest.png" ondragstart="drag(event)"alt="s">
+        <img width="50px" height="50px" id="drag1"src="Petals/Peas_Epic.png" ondragstart="drag(event)"alt="s">
+        <img width="50px" height="50px" id="drag2"src="Petals/Pollen.png" ondragstart="drag(event)"alt="s">
+        <img width="50px" height="50px" id="drag3"src="Petals/Rice.png" ondragstart="drag(event)"alt="s">
+        <img width="50px" height="50px" id="drag4"src="Petals/Rose_Epic.png" ondragstart="drag(event)"alt="s">
+        <img width="50px" height="50px" id="drag5"src="Petals/Triplet.png" ondragstart="drag(event)"alt="s">
+        <img width="50px" height="50px" id="drag6"src="Petals/Yin_Yang.png" ondragstart="drag(event)"alt="s">
+        <img width="50px" height="50px" id="drag7"src="Petals/Antennae.png" ondragstart="drag(event)"alt="s">
+        <img width="50px" height="50px" id="drag8"src="Petals/Cactus_Legendary.png" ondragstart="drag(event)"alt="s">
+        <img width="50px" height="50px" id="drag3"src="Petals/Egg_Legendary.png" ondragstart="drag(event)"alt="s">
+        <img width="50px" height="50px" id="drag4"src="Petals/Peas_Legendary.png" ondragstart="drag(event)"alt="s">
+        <img width="50px" height="50px" id="drag5"src="Petals/Stinger-Legendary.png" ondragstart="drag(event)"alt="s">
+        <img width="50px" height="50px" id="drag6"src="Petals/Web_Legendary.png" ondragstart="drag(event)"alt="s">
+        <img width="50px" height="50px" id="drag7"src="Petals/Basic_Unique.png" ondragstart="drag(event)"alt="s">
+        <img width="50px" height="50px" id="drag8"src="Petals/Square_Unique.png" ondragstart="drag(event)"alt="s">
+    </div>
+</div>
+</body>
+</html>
